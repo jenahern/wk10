@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Reader Sign Up</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+</head>
+
+<body style= "background: linear-gradient(rgba(56, 241, 241, 0.459), rgb(8, 109, 104));">
+  
+  <br>
+  <h2 class="display-4 m-3">Welcome to Our Class!</h2>
+  <br>
+  <div class="container-m-5 shadow m-3">
+    <div class="card text-bg-light mb-3">
+      <h3 class="card-header">Reading Rug Volunteers</h3>
+      <div class="card-body">
+        <h5 class="card-title">Share a Favorite Story with Our Class!</h5>
+        <p class="card-text">Please sign up below.</p>
+        <form class="row g-3" id="addsignup">
+          <div class="col-md-12">
+            <label for="selectDate">Select Date</label>
+            <input id="selectDate" class="form-control" type="date" />
+            <span id="selectDateSelected"></span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputNameR" class="form-label">Reader Name</label>
+            <input type="name" class="form-control" id="inputNameR">
+          </div>
+          <div class="col-md-6">
+            <label for="inputNameS" class="form-label">Student Name</label>
+            <input type="name" class="form-control" id="inputNameS">
+          </div>
+          <div class="col-md-12">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="col-md">
+            <label for="inputText" class="form-label">Title of Book</label>
+            <input type="email" class="form-control" id="inputText">
+          </div>
+          <div class="col-md-12">
+            <input type="button" class="btn btn-primary" value="Sign Up" id="btnsubmit">
+          </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container-med-m-5 gx-5">
+    <div class="card-med m-3">
+      <table class="table table-light table-striped" table id="table">
+        <thead class="table-info">
+          <tr>
+            <th>Date Selected</th>
+            <th>Reader Name</th>
+            <th>Student Name</th>
+            <th>Email</th>
+            <th>Book Title</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="wk10js.js"></script>
+</body>
+
+</html>
